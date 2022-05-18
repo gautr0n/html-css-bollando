@@ -17,8 +17,11 @@ article{
     margin: auto;
 }
 
-.logo{
-    height: 25px;
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
 }
 
 /*header*/
@@ -28,11 +31,8 @@ header{
     margin-bottom: 50px;
 }
 
-.nav-bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
+.logo{
+    height: 25px;
 }
 
 .nav-link{
@@ -76,6 +76,7 @@ header{
     width: calc(1400px / 3 - 23px);
     display: inline-block;
     position: relative;
+    text-align: center;
 }
 
 .discount{
@@ -123,7 +124,7 @@ header{
     color: red;
 }
 
-.ticket:hover::after{
+.fisrt-dress-b:hover::after{
     content: '';
     position: absolute;
     background-position:center;
@@ -134,3 +135,75 @@ header{
     right: 0;
     background-image: url(../img/1b.webp) ;
 }
+
+.second-dress-b:hover::after{
+    content: '';
+    position: absolute;
+    background-position:center;
+    background-size:cover;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../img/2b.webp) ;
+}
+
+.third-dress-b:hover::after{
+    content: '';
+    position: absolute;
+    background-position:center;
+    background-size:cover;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../img/3b.webp) ;
+}
+
+.fourth-dress-b:hover::after{
+    content: '';
+    position: absolute;
+    background-position:center;
+    background-size:cover;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../img/4b.webp) ;
+}
+
+.fifth-dress-b:hover::after{
+    content: '';
+    position: absolute;
+    background-position:center;
+    background-size:cover;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../img/5b.webp) ;
+}
+
+.sixth-dress-b:hover::after{
+    content: '';
+    position: absolute;
+    background-position:center;
+    background-size:cover;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../img/6b.webp) ;
+}
+
+/*footer*/
+
+footer{
+    background-color: #1A1A1A;
+}
+
+.legal-bar *{
+    color: white;
+    padding: 5px;
+}
+
