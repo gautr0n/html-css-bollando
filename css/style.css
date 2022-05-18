@@ -8,7 +8,6 @@
 
 article{
     display: inline-block;
-    position: relative;
 }
 
 /*utilities*/
@@ -75,6 +74,8 @@ header{
 
 .dress-img{
     width: calc(1400px / 3 - 23px);
+    display: inline-block;
+    position: relative;
 }
 
 .discount{
@@ -84,7 +85,8 @@ header{
     font-weight: bold;
     position: absolute;
     left: 0px;
-    bottom: 100px;
+    bottom: 50px;
+    z-index: 1;
 }
 
 .sost{
@@ -94,21 +96,41 @@ header{
     font-weight: bold;
     position: absolute;
     left: 65px;
-    bottom: 100px;
+    bottom: 50px;
+    z-index: 1;
 }
 
 .no-discount{
     left: 0;
 }
 
+.ticket{
+    display: inline-block;
+    position: relative;
+}
 
-
-/*article:hover::after{
-    content: '\2665';
+.heart{
+    font-size: 32px;
+    padding: 5px 10px;
+    background-color: white;
     position: absolute;
+    right: 0;
+    top: 5px;
+    z-index: 1;
+}
+
+.ticket:hover{
+    color: red;
+}
+
+.ticket:hover::after{
+    content: '';
+    position: absolute;
+    background-position:center;
+    background-size:cover;
     bottom: 0;
     top: 0;
     left: 0;
     right: 0;
-    background-image: url(../img/1b.webp);
-}*/
+    background-image: url(../img/1b.webp) ;
+}
